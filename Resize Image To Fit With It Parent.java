@@ -1,4 +1,5 @@
- public void resizeImage(Bitmap bitmap, ImageView view){
+        //This is method solution for Resize Image To Fit With It Parent
+        public void resizeImage(Bitmap bitmap, ImageView view){
             WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
             Display display = wm.getDefaultDisplay();
             Point size = new Point();
