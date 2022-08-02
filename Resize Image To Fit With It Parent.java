@@ -5,9 +5,10 @@
             display.getSize(size);
             int width = size.x;
             int height = bitmap.getHeight() + Math.abs(bitmap.getWidth() - width);
-            view.setImageBitmap(getResizedBitmap(bitmap, width - 20, height - 20));
+            view.setImageBitmap(getResizedBitmap(bitmap, width, height));
         }
 
+        //This Method will Resized Bitmap and keep ratio
         private Bitmap getResizedBitmap(Bitmap image, int maxWidth, int maxHeight) {
             if (maxHeight > 0 && maxWidth > 0) {
                 int width = image.getWidth();
